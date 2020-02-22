@@ -1,6 +1,6 @@
 # AspCoreDependency
 
-A plugin for Microsoft.Extensions.DependencyInjection to support automatically injecting all types which defines *ITransientType*, *IScopedType*, *ISingletonType*. 
+A plugin for *Microsoft.Extensions.DependencyInjection* to support automatically injecting all types which defines *ITransientType*, *IScopedType*, *ISingletonType*. 
 
 # How to Use
 
