@@ -40,3 +40,6 @@ A plugin for *Microsoft.Extensions.DependencyInjection* to support automatically
                     .Add("serviceC", typeof(ManagerC))
                     .Build();
 ```
+
+# Test Project
+You can see all usage in AspCoreDependency.Test project
