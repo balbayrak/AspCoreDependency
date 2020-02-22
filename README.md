@@ -9,7 +9,7 @@ A plugin for *Microsoft.Extensions.DependencyInjection* to support automatically
  PM> Install-Package Microsoft.Extensions.DependencyInjection
 ```
 * **Add AspCoreDependency dll to your project and implements interfaces according to Transient, Scoped, Singleton situation.**
-```
+```csharp
    public interface IServiceA : IService, ISingletonType
    {}
    
@@ -21,10 +21,10 @@ A plugin for *Microsoft.Extensions.DependencyInjection* to support automatically
    
 ```
 * **Ensure fire the AutoBind method in Startup.cs**
-```
+```csharp
    services.AutoBind();
         
-        or with namespace constraint
+      //  or with namespace constraint
  
    services.AutoBind(option =>
    {
@@ -33,7 +33,7 @@ A plugin for *Microsoft.Extensions.DependencyInjection* to support automatically
 ```
 * **Alternatively, use injection with custom name for implementation types in Startup.cs**
 
-```
+```csharp
   services.BindTransientByName<IService>()
                     .Add("serviceA", typeof(ManagerA))
                     .Add("serviceB", typeof(ManagerB))
