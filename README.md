@@ -8,7 +8,7 @@ A plugin for *Microsoft.Extensions.DependencyInjection* to support automatically
 ```
  PM> Install-Package Microsoft.Extensions.DependencyInjection
 ```
-* **Add AspCoreDependency dll to your project and implements interfaces according to Transient, Scoped, Singleton situation.**
+* **Add AspCoreDependency dll to your project and implements interfaces according to Transient, Scoped, Singleton lifetimes.**
 ```csharp
    public interface IServiceA : IService, ISingletonType
    {}
