@@ -42,4 +42,4 @@ A plugin for *Microsoft.Extensions.DependencyInjection* to support automatically
 ```
 
 # Test Project
-You can see all usage in AspCoreDependency.Test project
+You can see all usage in *AspCoreDependency.Test.csproj* project
