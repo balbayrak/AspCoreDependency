@@ -4,11 +4,11 @@ A plugin for *Microsoft.Extensions.DependencyInjection* to support automatically
 
 # How to Use
 
-* **Add DependencyInjection package to your project.**
+* **Add AspCoreDependency package to your project.**
 ```
- PM> Install-Package Microsoft.Extensions.DependencyInjection
+ PM> Install-Package AspCoreDependency.Core
 ```
-* **Add AspCoreDependency dll to your project and implements interfaces according to Transient, Scoped, Singleton lifetimes.**
+* **Implements interfaces according to Transient, Scoped, Singleton lifetimes.**
 ```csharp
    public interface IServiceA : IService, ISingletonType
    {}
